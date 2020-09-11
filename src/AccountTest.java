@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class AccountTest 
 {
+	@SuppressWarnings("resource")
 	public static void main(String[] args)
 	{
 		ModifiedAccountClass account1 = new ModifiedAccountClass("Jane Green", 60.21);
