@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Arithmetic {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stubbb
 		   Scanner input = new Scanner(System.in);
 	        int num1;
 	        int num2;
