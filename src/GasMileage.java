@@ -29,7 +29,6 @@ public class GasMileage {
 		System.out.printf("Total trips nr. : %d%n", tripsCount);
 		System.out.printf("Total miles/gallon : %.3f%n", totalMPG);
 		
-		
 	}
 
 }
