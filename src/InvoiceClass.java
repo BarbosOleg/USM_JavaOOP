@@ -5,7 +5,7 @@ public class InvoiceClass {
 	private int Quantity;
 	private double PricePerItem;
 	
-	InvoiceClass(String PartNumber, String PartDescription, int Quantity, double PricePerItem)
+	public InvoiceClass(String PartNumber, String PartDescription, int Quantity, double PricePerItem)
 	{
 		setPartNumber(PartNumber);
 		setPartDecscription(PartDescription);
