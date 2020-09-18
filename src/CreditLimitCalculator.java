@@ -1,7 +1,8 @@
 
 public class CreditLimitCalculator 
 {
-	private static int accountNumber = 0;
+	private static int accountIDCounter = 0;
+	private int accountNumber;
 	private int beginningBalance;
 	private int totalItemsCharged;
 	private int totalCredits;
@@ -9,16 +10,16 @@ public class CreditLimitCalculator
 	
 	public CreditLimitCalculator(int startMonthBalance, int totalItemsCharged, int totalCredits, int creditLimit) 
 	{
-		accountNumber++;
+		this.accountNumber = accountIDCounter++;
 		setStartMonthBalance(startMonthBalance);
 		setTotalItemsCharged(totalItemsCharged);
 		setTotalCredits(totalCredits);
 		setCreditLimit(creditLimit);
 	}
 	
-	public static int getAccountNumber() 
+	public int getAccountNumber() 
 	{
-		return accountNumber;
+		return this.accountNumber;
 	}
 	public int getStartMonthBalance() 
 	{
@@ -84,7 +85,7 @@ public class CreditLimitCalculator
 	}
 	public boolean limitExceeded()
 	{
-		return (newBalance() > creditLimit) ? false : true;
+		return (newBalance() > creditLimit) ? true : false;
 	}
 	
 }
