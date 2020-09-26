@@ -8,15 +8,21 @@ public class DuplicateElimination {
 		int[] tmpArray = new int[5];
 		
 		while(counter != 0) {
-			System.out.print("Get a number: ");
+			System.out.print("Get a unique number between 10 - 100: ");
 			tmp = input.nextInt();
 			if (tmp >= 10 && tmp <= 100) {
-				if (IsDublicates(tmp, tmpArray)) continue;
+				if (IsDublicates(tmp, tmpArray)) {
+					System.out.printf("Input number is not unique, try again!%n%n");
+					continue;
+				}
 				else {
 					tmpArray[iterator++] = tmp;
-					System.out.printf("%d%n",tmp);
+					System.out.printf("Unique number -> %d%n",tmp);
 					counter--;
+					System.out.printf("Remain attempt -> %d%n%n",counter);
 				}
+			}else {
+				System.out.printf("Input number is out of range, try again!%n%n");
 			}
 		}
 		System.out.printf("Array with unique number%n");
