@@ -24,5 +24,11 @@ public class RectangleClass {
 			this.width = width;
 		}else this.width = 1.0;
 	}
+	public double PerimeterCalculator() {
+		return this.lenght * 2 + this.width * 2;
+	}
+	public double AreaCalculator() {
+		return this.lenght * this.width;
+	}
 
 }
