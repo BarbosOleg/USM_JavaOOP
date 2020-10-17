@@ -34,4 +34,10 @@ public class Employee {
     {
         socialSecurityNumber = securityNumber;
     }
+    @Override
+    public String toString(){
+        return String.format("%s: %s %s%n%s: %s",
+                "commission employee", getFirstName(), getLastName(),
+                "social security number", getSocialSecurityNumber());
+    }
 }
