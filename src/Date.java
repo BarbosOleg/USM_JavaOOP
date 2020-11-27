@@ -18,11 +18,21 @@ public class Date {
         this.year = year;
         this.month = month;
         this.day = day;
+    }
 
-        System.out.printf("Date object constructor for date %s%n", this);
+    public int getDay() {
+        return day;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getYear() {
+        return year;
     }
 
     public String toString(){
-        return String.format("%d%d%d", year, month, day);
+        return String.format("%4d/%2d/%2d", year, month, day);
     }
 }
