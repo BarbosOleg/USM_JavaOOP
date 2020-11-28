@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class PigLatin {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter an sentence:");
+        System.out.println("Enter a sentence:");
         String[] tokens = scanner.nextLine().split(" ");
 
         for (String token : tokens) {
